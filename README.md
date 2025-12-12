@@ -27,7 +27,52 @@ cargo build --release
 
 The compiled binary will be available at `target/release/vanity-address-solana`
 
+### Install Globally (Recommended)
+
+To install the binary globally so you can run it from anywhere:
+
+```bash
+cargo install --path .
+```
+
+After installation, you can run the tool directly:
+
+```bash
+vanity-address-solana --prefix "ABC"
+```
+
+### Alternative: Add to PATH
+
+You can also add the release directory to your PATH:
+
+```bash
+# macOS/Linux - Add to ~/.zshrc or ~/.bashrc
+export PATH="$PATH:$(pwd)/target/release"
+```
+
+Then run:
+
+```bash
+vanity-address-solana --prefix "ABC"
+```
+
 ## Usage
+
+### Quick Start (After Building)
+
+If you built with `cargo build --release`:
+```bash
+# Run from project directory
+./target/release/vanity-address-solana --prefix "ABC"
+
+# Or using cargo run (slower, but convenient during development)
+cargo run --release -- --prefix "ABC"
+```
+
+If you installed globally with `cargo install --path .`:
+```bash
+vanity-address-solana --prefix "ABC"
+```
 
 ### Basic Commands
 
