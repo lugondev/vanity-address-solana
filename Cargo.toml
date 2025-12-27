@@ -2,9 +2,17 @@
 name = "vanity-address-solana"
 version = "0.1.0"
 edition = "2021"
+authors = ["lugondev <lugondev@gmail.com>"]
+description = "A high-performance Solana vanity address generator CLI"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/lugondev/vanity-address-solana"
+readme = "README.md"
+keywords = ["solana", "vanity-address", "generator", "crypto", "blockchain"]
+categories = ["command-line-utilities", "cryptography::cryptocurrencies"]
 
 [dependencies]
 solana-sdk = "2.1"
 bs58 = "0.5"
 rayon = "1.10"
 clap = { version = "4.5", features = ["derive"] }
+
